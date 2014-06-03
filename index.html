@@ -80,8 +80,6 @@ function enviar(marc,mod,col,prec){
 	$.ajax({
 		type: "POST",
 url:"http://jazz.260mb.net/consultas/procesar.php",
-       url: "procesar.php",
-
            data: "Marca="+marc+"&Modelo="+mod+"&Color="+col+"&Precio="+prec,
 		success: onSuccess
 	}).done(function(msg){
